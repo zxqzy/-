@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>基础学习</title>
+  <style>
+	body{
+		perspective:800px;
+	}
+	.outer-wrap{
+		position:relative;
+		width:200px;
+		height:200px;
+		margin:400px auto;
+		color:#ff99ff;
+		transform-style:preserve-3d;
+		transition:2s;
+	}
+	.outer-wrap:hover{
+		transform:rotateY(360deg);
+	}
+	.outer-wrap:hover .outer-wrap1{
+		/* 相对于初始位置 */
+		transform:rotateX(90deg) translateY(-100px) rotateX(150deg);  
+	}
+	.outer-wrap:hover .inner-wrap{
+		transform:translateY(-380px) rotateY(360deg);
+	}
+	.outer-wrap [class ^="outer-wrap"]{
+		position:absolute;
+		/* top:0px;
+		left:0px; */
+		width:100%;
+		height:100%;
+		line-height:200px;
+		text-align:center;
+		font-size:26px;
+		background-color:transparent;
+		box-shadow:0 0 10px pink inset;
+		/* transition:2s; */
+	}
+	.outer-wrap1{
+		transform-origin:center top;
+		transform:rotateX(90deg) translateY(-100px);
+	}
+	.outer-wrap2{
+		transform:rotateX(-90deg) translateZ(100px);
+	}
+	.outer-wrap3{
+		transform:rotateY(-90deg) translateZ(100px);
+	}
+	.outer-wrap4{
+		transform:rotateY(90deg) translateZ(100px);
+	}
+	.outer-wrap5{
+		transform:translateZ(100px);
+	}
+	.outer-wrap6{
+		transform:rotateY(180deg) translateZ(100px);
+	}
+	.inner-wrap{
+		position:absolute;
+		width:100px;
+		height:100px;
+		top:50%;
+		left:50%;
+		margin:-50px 0px 0px -50px;
+		transform-style:preserve-3d;
+		transition:2s;
+	}
+	.inner-wrap [class ^="inner-wrap"]{
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100px;
+		height:100px;
+	}
+	.inner-wrap1{
+		background:url(images/1.jpg) no-repeat 0 0/100px 100px;
+		transform:rotateX(90deg) translateZ(50px);
+	}
+	.inner-wrap2{
+		background:url(images/2.jpg) no-repeat 0 0/100px 100px;
+		transform:rotateX(-90deg) translateZ(50px);
+	}
+	.inner-wrap3{
+		background:url(images/3.jpg) no-repeat 0 0/100px 100px;
+		transform:rotateY(-90deg) translateZ(50px);
+	}
+	.inner-wrap4{
+		background:url(images/4.jpg) no-repeat 0 0/100px 100px;
+		transform:rotateY(90deg) translateZ(50px);
+	}
+	.inner-wrap5{
+		background:url(images/5.jpg) no-repeat 0 0/100px 100px;
+		transform:translateZ(50px);
+	}
+	.inner-wrap6{
+		background:url(images/6.jpg) no-repeat 0 0/100px 100px;
+		transform:rotateY(180deg) translateZ(50px);
+	}
+  </style>
+ </head>
+ <body>
+	<div class="outer-wrap">
+		<div class="outer-wrap1">上面</div>
+		<div class="outer-wrap2">下面</div>
+		<div class="outer-wrap3">左面</div>
+		<div class="outer-wrap4">右面</div>
+		<div class="outer-wrap5">前面</div>
+		<div class="outer-wrap6">后面</div>
+		<div class="inner-wrap">
+			<div class="inner-wrap1"></div>
+			<div class="inner-wrap2"></div>
+			<div class="inner-wrap3"></div>
+			<div class="inner-wrap4"></div>
+			<div class="inner-wrap5"></div>
+			<div class="inner-wrap6"></div>
+		</div>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>基础学习</title>
+  <style>
+	body{
+		background-color:#000;
+		perspective:800px;
+	}
+	.wrap{
+		position:relative;
+		width:250px;
+		height:250px;
+		margin:50px auto;
+		line-height:250px;
+		color:#ff6600;
+		font-size:35px;
+		font-weight:bold;
+		text-align:center;
+		background-color:transparent;
+		text-shadow:0 0 5px #ff6600;
+		transition:transform 3s;
+		transform-style:preserve-3d;
+	}
+	.wrap>div{
+		position:absolute;
+		width:250px;
+		height:250px;
+		top:0;
+		left:0;
+		opacity:0.9;
+		line-height:250px;
+		text-align:center;
+		font-size:20px;
+		background-image:repeating-linear-gradient(red 0%,red 0.6%,transparent 0.6%,transparent 14.2%),repeating-linear-gradient(90deg,red 0%,red 0.6%,transparent 0.6%,transparent 14.2%);
+		box-shadow:0 0 0px transparent;
+		transition:3s;
+	}
+	.wrap1{
+		color:#ffff00;
+		transform:rotateX(90deg) translateZ(125px);
+	}
+	.wrap2{
+		color:#80ff00;
+		transform:rotateX(-90deg) translateZ(125px);
+	}
+	.wrap3{
+		color:#00ffff;
+		transform:rotateY(-90deg) translateZ(125px);
+	}
+	.wrap4{
+		color:#8000ff;
+		transform:rotateY(90deg) translateZ(125px);
+	}
+	.wrap5{
+		color:#ff33cc;
+		transform:translateZ(125px);
+	}
+	.wrap6{
+		color:#ff80ff;
+		transform:rotateY(180deg) translateZ(125px);
+	}
+	.wrap:hover{
+		background-color:#ff6600;
+		transform:rotateY(360deg) rotateX(360deg);
+	}
+	.wrap:hover .wrap1{
+		background-color:#ffff00;
+		box-shadow:0 0 20px #ff6600;
+	}
+	.wrap:hover .wrap2{
+		background-color:#80ff00;
+		box-shadow:0 0 20px #80ff00;
+	}
+	.wrap:hover .wrap3{
+		background-color:#00ffff;
+		box-shadow:0 0 20px #00ffff;
+	}
+	.wrap:hover .wrap4{
+		background-color:#8000ff;
+		box-shadow:0 0 20px #8000ff;
+	}
+	.wrap:hover .wrap5{
+		background-color:#ff33cc;
+		box-shadow:0 0 20px #ff33cc;
+	}
+	.wrap:hover .wrap6{
+		background-color:#ff80ff;
+		box-shadow:0 0 20px #ff80ff;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">么么哒！
+		<div class="wrap1">lovely</div>
+		<div class="wrap2">lovely</div>
+		<div class="wrap3">lovely</div>
+		<div class="wrap4">lovely</div>
+		<div class="wrap5">lovely</div>
+		<div class="wrap6">lovely</div>
+	</div>
+ </body>
+</html>
