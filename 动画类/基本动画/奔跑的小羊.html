@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>基础学习</title>
+  <style>
+	body{
+		margin:0px;
+	}
+	.wrap{
+		position:relative;
+		height:435px;
+		width:1095px;
+		margin:100px auto;
+		overflow:hidden;
+		background-color:#2090c0;
+	}
+	.sheep-move{
+		position:absolute;
+		width:153px;
+		height:120px;
+		right:-160px;
+		animation:sheep-move 4s linear infinite;
+	}
+	.sheep-move:active{
+		animation-play-state:paused;
+	}
+	.sheep-move:active .alternate-sheep{
+		cursor:pointer;
+		animation-play-state:paused;
+		animation:stop-run 0.3s steps(1,end) infinite;
+	}
+	.first-sheep{
+		top:5px;
+	}
+	.second-sheep{
+		top:125px;
+		animation-delay:2s;
+	}
+	.third-sheep{
+		top:245px;
+		animation-delay:4s;
+	}
+	.alternate-sheep{
+		height:120px;
+		background:url('images/sheep.png') no-repeat 0px 0px;
+		animation:alternate-run 0.3s steps(1,end) infinite;
+	}
+	@keyframes alternate-run{
+		0%{
+			background-position:0px 0px;
+		}
+		25%{
+			background-position:-328px 0px;
+		}
+		50%{
+			background-position:-657px 0px;
+		}
+		75%{
+			background-position:-985px 0px;
+		}
+		100%{
+			background-position:0px 0px;
+		}
+	}
+	@keyframes sheep-move{
+		0%{
+			right:-160px;
+		}
+		100%{
+			right:1095px;
+		}
+	}
+	@keyframes stop-run{
+		0%{
+			background-position:0px -125px;
+		}
+		50%{
+			background-position:-164px -125px;
+		}
+		100%{
+			background-position:0px -125px;
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="sheep-move first-sheep">
+			<div class="alternate-sheep"></div>
+		</div>
+		<div class="sheep-move second-sheep">
+			<div class="alternate-sheep"></div>
+		</div>
+		<div class="sheep-move third-sheep">
+			<div class="alternate-sheep"></div>
+		</div>
+	</div>
+ </body>
+</html>
+<!-- 可以给一个盒子同时添加几个动画，用div盒子隔开即可 -->
+<!-- 如果只有动画的起始帧和终止帧，可以用from和to关键字 -->
+<!-- 背景图片设置为0%时是背景图片的左端对着外边框的左边；设置成100%是背景图片的右边对着外边框的右边。 -->

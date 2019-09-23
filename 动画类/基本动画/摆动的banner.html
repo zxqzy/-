@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>基础学习</title>
+	<style>
+		body,
+		html {
+			width: 100%;
+			overflow: hidden;
+		}
+
+		body {
+			background-color: #000;
+			perspective: 800px;
+		}
+
+		.wrap {
+			width: 1000px;
+			height: 370px;
+			margin: 100px auto;
+			border: 5px dotted #0000f0;
+			border-radius: 25px;
+			animation: run 3s infinite alternate linear;
+		}
+
+		@keyframes run {
+			0% {
+				transform: rotateX(-45deg)
+			}
+
+			100% {
+				transform: rotateX(45deg)
+			}
+		}
+
+		.wrap:hover {
+			animation-play-state: paused;
+		}
+
+		.sheep {
+			position: relative;
+			float: left;
+			width: 220px;
+			height: 300px;
+			margin: 35px 15px;
+			color: #fff;
+			text-align: center;
+			transform-style: preserve-3d;
+		}
+
+		.sheep:hover .image {
+			transform: rotateY(90deg);
+		}
+
+		.sheep:hover .intro{
+			transform: rotateY(0deg);
+		}
+		.sheep>div {
+			position: absolute;
+			transition: 0.5s;
+		}
+
+		.image {
+			transform: rotateY(0deg);
+		}
+
+		.image img {
+			width: 220px;
+			vertical-align: bottom;
+		}
+
+		.intro {
+			height: 300px;
+			background-color: green;
+			transform:rotateY(-90deg);
+		}
+
+		.intro h5 {
+			font-size: 20px;
+		}
+
+		.intro p {
+			text-indent: 2em;
+			line-height: 1.8em;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="sheep">
+			<div class="image">
+				<img src="images/1.jpg">
+			</div>
+			<div class="intro">
+				<h5>本杰玥警官</h5>
+				<p>动物园里的前台招待，本杰非常喜欢吃超级明星面包圈。他是一个非常友善的人，在接待桌前，他对每个人服以热情的微笑</p>
+			</div>
+		</div>
+		<div class="sheep">
+			<div class="image">
+				<img src="images/2.jpg">
+			</div>
+			<div class="intro">
+				<h5>本杰玥警官</h5>
+				<p>动物园里的前台招待，本杰非常喜欢吃超级明星面包圈。他是一个非常友善的人，在接待桌前，他对每个人服以热情的微笑</p>
+			</div>
+		</div>
+		<div class="sheep">
+			<div class="image">
+				<img src="images/3.jpg">
+			</div>
+			<div class="intro">
+				<h5>本杰玥警官</h5>
+				<p>动物园里的前台招待，本杰非常喜欢吃超级明星面包圈。他是一个非常友善的人，在接待桌前，他对每个人服以热情的微笑</p>
+			</div>
+		</div>
+		<div class="sheep">
+			<div class="image">
+				<img src="images/4.jpg">
+			</div>
+			<div class="intro">
+				<h5>本杰玥警官</h5>
+				<p>动物园里的前台招待，本杰非常喜欢吃超级明星面包圈。他是一个非常友善的人，在接待桌前，他对每个人服以热情的微笑</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+<!-- 两个元素重叠也可以用-margin的形式
+可以直接写动画的起始帧和结束帧
+-->
