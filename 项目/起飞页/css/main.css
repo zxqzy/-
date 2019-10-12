@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/* 更快区域 */
+
+#main .faster .faster-content {
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.faster .faster-content h3 {
+    padding-top: 100px;
+    font-size: 54px;
+    line-height: 80px;
+    font-weight: 100;
+    color: #333;
+}
+
+.faster .faster-content p {
+    line-height: 55px;
+    font-weight: 320;
+    font-size: 22px;
+    color: #666;
+}
+
+.faster .video-container {
+    max-width: 990px;
+    height: 690px;
+    margin: auto;
+    background: url('../images/45.png') no-repeat 0/cover;
+    text-align: center;
+}
+
+.faster .video-container video {
+    width: 748px;
+    height: 404px;
+    margin-left: 4px;
+    margin-top: 38px;
+    object-fit: cover;
+}
+
+.faster .video-container img {
+    display: none;
+    width: 82%;
+    margin-bottom: 50px;
+}
+
+
+/* 快速搭建一个响应式网站 */
+
+#main [class ^='section'] {
+    overflow: hidden;
+    height: 520px;
+    padding: 0 70px 0 45px;
+    background-color: #f9f9f9;
+    line-height: 520px;
+    font-size: 0;
+    color: rgb(105, 105, 105);
+}
+
+#main [class ^='section'] div.image {
+    display: inline-block;
+    width: 54%;
+    transform: translateX(-400px);
+    transition: transform 1s;
+    /* background-color: blue; */
+}
+
+#main [class ^='section'] img {
+    width: 95%;
+}
+
+#main [class ^='section'] .description {
+    display: inline-block;
+    width: 46%;
+    /* height: 280px; */
+    /* background-color: pink; */
+    vertical-align: middle;
+}
+
+#main [class ^='section'] .description h3 {
+    line-height: 58px;
+    font-weight: 100;
+    font-size: 40px;
+    vertical-align: left;
+}
+
+#main [class ^='section'] .description p {
+    padding-top: 22px;
+    line-height: 2em;
+    font-size: 15px;
+}
+
+
+/* 自助建站特有样式 */
+
+#main .section-two {
+    padding: 0 40px 0 70px;
+    background-color: #fff;
+}
+
+#main .section-two div.image {
+    width: 50%;
+    padding-left: 4%;
+    text-align: left;
+    transform: translateX(400px);
+}
+
+#main .section-two img {
+    width: 100%;
+}
+
+#main .section-two .description {
+    width: 44%;
+    padding-left: 2%;
+}
+
+#main .section-two .description h3 {
+    color: #3ea3ff;
+}
+
+
+/* 服务器部分特有样式 */
+
+#main .section-three div.image {
+    padding-right: 2.5%;
+}
+
+#main .section-three .description {
+    width: 41.5%;
+}
+
+#main .section-three .description p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+}
+
+
+/* 搜索引擎部分特有样式 */
+
+#main .section-four {
+    padding: 0 40px 0 70px;
+    background-color: #fff;
+}
+
+#main .section-four div.image {
+    width: 50%;
+    padding-left: 5%;
+    text-align: left;
+    transform: translateX(400px);
+}
+
+#main .section-four img {
+    width: 100%;
+}
+
+#main .section-four .description {
+    width: 45%;
+}
+
+#main .section-four .description h3 {
+    color: #3ea3ff;
+}
+
+#main .section-four .description p {
+    color: rgb(128, 128, 128);
+}
+
+.section-four .description p a {
+    display: none;
+    left: 0px;
+    bottom: -40px;
+    color: #3ea3ff;
+}
+
+
+/* 云服务器优势部分样式 */
+
+#main .cloud-advantage {
+    height: 670px;
+    padding-top: 150px;
+    background-color: #f7f7f7;
+}
+
+.cloud-advantage .cloud-advantage-container {
+    width: 910px;
+    height: 495px;
+    margin: auto;
+    /* background-color: pink; */
+    text-align: center;
+}
+
+.cloud-advantage-container h3 {
+    line-height: 48px;
+    font-size: 40px;
+    font-weight: 100;
+    color: #333;
+}
+
+.cloud-advantage-container p {
+    padding-top: 10px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #333;
+}
+
+.cloud-advantage-container ul {
+    display: flex;
+    height: 355px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.cloud-advantage-container li {
+    display: flex;
+    width: 32%;
+    height: 170px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #ccc;
+}
+
+.cloud-advantage-container li i {
+    width: 82px;
+    height: 70px;
+}
+
+.cloud-advantage-container li:first-child i {
+    background-image: url('../images/hj.png');
+}
+
+.cloud-advantage-container li:nth-child(2) i {
+    background-image: url('../images/hc.png');
+}
+
+.cloud-advantage-container li:nth-child(3) i {
+    background-image: url('../images/ys.png');
+}
+
+.cloud-advantage-container li:nth-child(4) i {
+    background-image: url('../images/hb.png');
+}
+
+.cloud-advantage-container li:nth-child(5) i {
+    background-image: url('../images/yjx.png');
+}
+
+.cloud-advantage-container li:nth-child(6) i {
+    background-image: url('../images/picys.png');
+}
+
+.cloud-advantage-container li span {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(73, 73, 73);
+}
+
+.cloud-advantage-container li:hover {
+    background-color: #fff;
+    border-color: #60b0fe;
+}
+
+.cloud-advantage-container li:first-child:hover i {
+    background-image: url('../images/hj1.png');
+}
+
+.cloud-advantage-container li:nth-child(2):hover i {
+    background-image: url('../images/hc1.png');
+}
+
+.cloud-advantage-container li:nth-child(3):hover i {
+    background-image: url('../images/ys1.png');
+}
+
+.cloud-advantage-container li:nth-child(4):hover i {
+    background-image: url('../images/hb1.png');
+}
+
+.cloud-advantage-container li:nth-child(5):hover i {
+    background-image: url('../images/yjx1.png');
+}
+
+.cloud-advantage-container li:nth-child(6):hover i {
+    background-image: url('../images/picys1.png');
+}
+
+/* 免费模板板块 */
+#main .free-template{
+    width: 100%;
+    /* height: 472px; */
+    /* background-color: blue; */
+    text-align: center;
+}
+.free-template h3{
+    padding-top: 163px;
+    font-weight: normal;
+    font-size: 40px;
+    color: #333;
+}
+.free-template p{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #a9a9a9;
+    line-height: 45px;
+}
+.free-template .display{
+    overflow: hidden;
+    width: 98%;
+    margin: auto;
+    /* background-color: pink; */
+}
+.free-template .display ul{
+    width: 175%;
+    transition: 1s;
+}
+.free-template .display ul li{
+    width: 12%;
+    margin: 0px 1.143%;
+}
+.free-template .display ul li img{
+    width: 100%;
+}
+.btn div{
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    line-height: 26px;
+    font-size: 26px;
+    color: #777;
+    cursor: pointer;
+}
+.btn .left-btn{
+    left: -7px;
+}
+.btn .right-btn{
+    right: -7px;
+}
+.btn div:hover{
+    color: #333;
+}
+
+/* 建站服务板块 */
+#main .station-building{
+    /* height: 1280px; */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.station-building h3{
+    padding-top: 210px;
+    font-weight: normal;
+    font-size: 36px;
+    color: #393939;
+}
+.station-building p{
+    margin: 32px 0 70px 0;
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+}
+.station-building .display{
+    width: 93%;
+    margin: auto;
+    /* background: pink; */
+    /* height: auto; */
+}
+.station-building .display ul{
+    width: 100%;
+}
+.display ul li{
+    width: 33.3%;
+}
+.display ul li img{
+    width: 100%;
+}
+.station-building .btn{
+    /* width: auto; */
+    display: inline-block;
+    margin: 50px 0 105px;
+    padding: 8px 0 6px 50px;
+    background-color: rgb(97, 176, 255);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 17px;
+}
+.station-building .btn span{
+    padding: 0 30px 0 20px;
+    font-weight: 700;
+}
+
+/* 提供的不仅仅是工具模块 */
+#main .provide{
+    /* height: 960px; */
+    background-image: url('../images/31.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.provide h3{
+    width: 396px;
+    padding-top: 125px;
+    margin: auto;
+    font-weight: normal;
+    font-size: 36px;
+}
+.provide h3:after{
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -32.5px;
+    background: #fff;
+}
+.provide p{
+    width: 936px;
+    margin: 45px auto 30px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.provide .image{
+    width: 934px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+.provide .image img{
+    width: 100%;
+}

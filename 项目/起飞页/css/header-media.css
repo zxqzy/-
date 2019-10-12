@@ -1,0 +1,47 @@
+@charset "utf-8";
+@media screen and (max-width:992px){
+    #header #logo{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #header .subnav{
+        display: none;
+    }
+    .search-register i{
+        padding: 0 5px;
+    }
+    #header .menu{
+        display: block;
+    }
+    #header .banner{
+        height: 460px;
+    }
+    #header .banner:after{
+        display: none;
+    }
+    .banner video{
+        display: none;
+    }
+    .banner img{
+        display: inline-block;
+    }
+    .banner .intro{
+        display: none;
+    }
+    .banner .banner-hide{
+        display: block;
+    }
+}
+@media screen and (max-width:770px){
+    .banner .banner-hide{
+        padding-top: 80px;
+    }
+    .banner .banner-hide p{
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .banner .banner-hide a{
+        margin-left: 0px;
+    }
+}

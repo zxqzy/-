@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>基础学习</title>
+  <style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	ul,li{
+		list-style:none;
+	}
+	a{
+		text-decoration:none;
+		color:#000;
+	}
+	.banner{
+		width:1240px;
+		margin:0px auto 20px;
+		/* border:1px solid skyblue; */
+	}
+	.content{
+		position:relative;
+		width:1120px;
+		/* height:800px; */
+	}
+	.title{
+		height:55px;
+		border-bottom:1px solid #222;
+		background:url('images/01.png') no-repeat 360px -904px;
+	}
+	.nav{
+		height:17px;
+		margin:15px 0px 25px 285px;
+	}
+	.nav a{
+		display:block;
+		float:left;
+		height:17px;
+		padding:0px 30px;
+		line-height:17px;
+		font-size:17px;
+	}
+	.nav a:not(:last-child){
+		border-right:1px solid #999;
+	}
+	.nav a:hover{
+		color:#ff33cc;
+	}
+	.content-detail:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.content-detail>div{
+		overflow:hidden;
+		float:left;
+		width:355px;
+		height:535px;
+	}
+	.causus{
+		position:relative;
+	}
+	.causus-detail{
+		width:300%;
+		/* height:535px; */
+	}
+	.causus-detail li{
+		float:left;
+		width:315px;
+		height:535px;
+		padding:0px 20px;
+		background:url('images/02.jpg') no-repeat 0/355px;
+		text-align:center;
+		color:#eee;
+	}
+	.causus-detail h4{
+		margin-top:425px;
+		font:normal 18px "Microsoft YaH";
+	}
+	.causus-detail p{
+		overflow:hidden;
+		height:50px;
+		margin-top:10px;
+		font-size:14px;
+		line-height:25px;
+	}
+	.causus-detail:hover{
+		opacity:.9;
+	}
+	.footer{
+		position:absolute;
+		width:54px;
+		height:10px;
+		left:50%;
+		bottom:8px;
+		margin-left:-27px;
+	}
+	.footer span{
+		float:left;
+		width:10px;
+		height:10px;
+		margin:0px 4px;
+		background-color:#666;
+	}
+	.footer span:hover{
+		background-color:#ff33cc;
+	}
+	.footer .active{
+		background-color:#ff33cc;
+	}
+	.eye-makeup{
+		margin:0px 27.5px;
+	}
+	.image{
+		height:30px;
+		padding-top:220px;
+		margin-bottom:35px;
+		background:url('images/03.jpg') no-repeat 0/355px;
+	}
+	.image p{
+		color:#eee;
+		text-align:center;
+		/* font-size:16px; */
+	}
+	.image:hover{
+		opacity:.9;
+	}
+	.hot{
+		width:315px;
+		height:220px;
+		padding:10px 0px 0px 20px;
+		border:10px solid #eee;
+	}
+	.hot li{
+		padding-left:35px;
+		background:url('images/01.png') no-repeat;
+		color:#222;
+		font-size:15px;
+		line-height:30px;
+	}
+	.hot a:first-of-type li{
+		background-position:-438px 5px;
+	}
+	.hot a:nth-of-type(2) li{
+		background-position:-438px -195px;
+	}
+	.hot a:nth-of-type(3) li{
+		background-position:-438px -35px;
+	}
+	.hot a:nth-of-type(4) li{
+		background-position:-438px -235px;
+	}
+	.hot a:nth-of-type(5) li{
+		background-position:-438px -75px;
+	}
+	.hot a:nth-of-type(6) li{
+		background-position:-438px -275px;
+	}
+	.hot a:last-of-type li{
+		background-position:-438px -115px;
+	}
+	.hot li:hover{
+		margin-left:6px;
+	}
+	.content-detail .face-makeup{
+		position:relative;
+		width:315px;
+		height:495px;
+		padding:20px;
+		background-color:#f6f6f8;
+	}
+	.image-change{
+		padding-top:200px;
+		background:url('images/04.jpg') no-repeat 0px 0px/315px;
+	}
+	.week-hot h3{
+		/* float:left; */
+		width:315px;
+		height:20px;
+		margin-bottom:20px;
+		font-weight:normal;
+		font-size:20px;
+		line-height:20px;
+		text-align:center;
+	}
+	.week-hot h3:before{
+		float:left;
+		width:107.5px;
+		height:10px;
+		content:"";
+		border-bottom:1px solid #666;
+	}
+	.week-hot h3:after{
+		float:right;
+		width:107.5px;
+		height:10px;
+		content:"";
+		border-bottom:1px solid #666;
+	}
+	.week-hot-detail{
+		overflow:hidden;
+		width:315px;
+		height:185px;
+	}
+	.week-hot-detail ul{
+		width:300%;
+		height:185px;
+	}
+	.week-hot-detail li{
+		float:left;
+		width:315px;
+		height:185px;
+	}
+	.week-hot-detail a{
+		float:left;
+		width:150px;
+		height:185px;
+	}
+	.week-hot-detail a:first-child{
+		margin-right:15px;
+	}
+	.week-hot-detail .picture{
+		width:150px;
+	}
+	.week-hot-detail img{
+		width:150px;
+	}
+	.week-hot-detail p{
+		line-height:30px;
+		font-size:14px;
+		text-align:center;
+	}
+	.btn{
+		display:none;
+		position:absolute;
+		top:50%;
+		width:37px;
+		height:74px;
+		margin-top:-37px;
+	}
+	.left-btn{
+		left:0px;
+		background:url('images/04.png') no-repeat;
+	}
+	.right-btn{
+		right:0px;
+		background:url('images/03.png') no-repeat;
+	}
+	.face-makeup:hover .btn{
+		display:block;
+	}
+	.rightsidebar{
+		position:absolute;
+		width:100px;
+		top:285px;
+		right:-130px;
+	}
+	.rightsidebar .text-style{
+		height:40px;
+		line-height:40px;
+		font-size:14px;
+	}
+	.rightsidebar .text-style:hover a{
+		color:#ff33cc;
+		font-size:16px;
+	}
+	.rightsidebar a{
+		color:#ccc;
+	}
+	.rightsidebar .image-style{
+		height:50px;
+	}
+	.rightsidebar .beauty{
+		padding-left:20px;
+		background:url('images/02.png') no-repeat -85px -12px;
+	}
+	.rightsidebar .circle:before{
+		float:left;
+		content:"";
+		width:7px;
+		height:7px;
+		margin:16.5px 8px 0px 5px;
+		background-color:#ccc;
+		border-radius:50%;
+	}
+	.rightsidebar .weixin{
+		margin-bottom:8px;
+		background:url('images/02.png') no-repeat 5px -58px;
+	}
+	.rightsidebar .home{
+		background:url('images/02.png') no-repeat 5px -116px;
+	}
+	.rightsidebar .weixin:hover{
+		background:url('images/02.png') no-repeat 5px -230px;
+	}
+	.rightsidebar .home:hover{
+		background:url('images/02.png') no-repeat 5px -288px;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="banner">
+		<div class="content">
+			<div class="title"></div>
+			<div class="nav">
+				<a href="">美容</a>
+				<a href="">评测</a>
+				<a href="">美发</a>
+				<a href="">试用</a>
+				<a href="">化妆品库</a>
+			</div>
+			<div class="content-detail">
+				<div class="causus">
+					<ul class="causus-detail">
+						<a href="">
+							<li>
+								<h4>阮经天，还能撩天撩地撩杨幂</h4>
+								<p>随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播</p>
+							</li>
+						</a>
+						<a href="">
+							<li>
+								<h4>阮经天，还能撩天撩地撩杨幂</h4>
+								<p>随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播</p>
+							</li>
+						</a>
+						<a href="">
+							<li>
+								<h4>阮经天，还能撩天撩地撩杨幂</h4>
+								<p>随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播随着《扶摇》热播</p>
+							</li>
+						</a>
+					</ul>
+					<div class="footer">
+						<span></span>
+						<span></span>
+						<span class="active"></span>
+					</div>
+				</div>
+				<div class="eye-makeup">
+					<a href="">
+						<div class="image">
+							<p>巴黎18秋冬高定秀 别开生面的妆容大赛</p>
+						</div>
+					</a>
+					<ul class="hot">
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+						<a href="">
+							<li>今年夏季限定最美眼影盘都在这了</li>
+						</a>
+				</div>
+				<div class="face-makeup">
+					<a href="">
+						<div class="image image-change">
+							<p>女神“小解”新体验，温柔呵护你的小秘密</p>
+						</div>
+					</a>
+					<div class="week-hot">
+						<h3>本周热门</h3>
+						<div class="week-hot-detail">
+							<ul>
+								<li>
+									<a href="">
+										<div class="picture">
+											<img src="images/05.jpg">
+										</div>
+										<p>值村秀 塑颜光鲜粉饼</p>
+									</a>
+									<a href="">
+										<div class="picture">
+											<img src="images/06.jpg">
+										</div>
+										<p>值村秀 塑颜光鲜粉饼</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="picture">
+											<img src="images/05.jpg">
+										</div>
+										<p>值村秀 塑颜光鲜粉饼</p>
+									</a>
+									<a href="">
+										<div class="picture">
+											<img src="images/06.jpg">
+										</div>
+										<p>值村秀 塑颜光鲜粉饼</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="picture">
+											<img src="images/05.jpg">
+										</div>
+										<p>值村秀 塑颜光鲜粉饼</p>
+									</a>
+									<a href="">
+										<div class="picture">
+											<img src="images/06.jpg">
+										</div>
+										<p>值村秀 塑颜光鲜粉饼</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn left-btn"></div>
+					<div class="btn right-btn"></div>
+					<div class="footer">
+						<span></span>
+						<span></span>
+						<span class="active"></span>
+					</div>
+				</div>
+			</div>
+			<div class="rightsidebar">
+				<ul>
+					<li class="text-style beauty"><a href="">美丽</a></li>
+					<li class="text-style fashion circle"><a href="">时尚</a></li>
+					<li class="text-style video circle"><a href="">视频</a></li>
+					<li class="text-style lotus circle"><a href="">乐活</a></li>
+					<li class="image-style weixin"><a href=""></a></li>
+					<li class="image-style home"><a href=""></a></li>
+				</ul>
+		</div>
+		</div>
+	</div>
+ </body>
+</html>

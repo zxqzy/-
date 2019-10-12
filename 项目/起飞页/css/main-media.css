@@ -1,0 +1,278 @@
+@charset "utf-8";
+@media screen and (max-width:992px) {
+    /* 更快区域 */
+    #main .faster .faster-content {
+        height: 230px;
+    }
+    .faster .faster-content h3 {
+        padding-top: 25px;
+    }
+    .faster .video-container {
+        height: auto;
+        background-image: none;
+    }
+    .faster .video-container video {
+        display: none;
+    }
+    .faster .video-container img {
+        display: inline-block;
+    }
+    /* 快速搭建一个响应式网站 */
+    #main [class ^='section'] {
+        height: auto;
+        padding: 0;
+    }
+    #main [class ^='section'] div.image {
+        display: block;
+        width: 768px;
+        margin: auto;
+        padding: 80px 0;
+        line-height: 0;
+    }
+    #main [class ^='section'] div img {
+        width: 100%;
+        text-align: center;
+    }
+    #main [class ^='section'] .description {
+        display: block;
+        width: 510px;
+        margin: auto;
+        padding-bottom: 120px;
+    }
+    #main [class ^='section'] .description h3 {
+        text-align: center;
+    }
+    /* 服务器部分和搜索引擎部分 */
+    #main [class ^='section'].plural {
+        height: 462px;
+    }
+    #main [class ^='section'].plural div.image {
+        width: 300px;
+        top: -98px;
+        padding: 0;
+    }
+    #main [class ^='section'].plural .description {
+        width: 770px;
+        top: 260px;
+        padding: 0;
+    }
+    #main [class ^='section'].plural .description h3 {
+        text-align: left;
+        font-size: 34px;
+        font-weight: 500;
+    }
+    #main [class ^='section'].plural .description p {
+        font-size: 14px;
+    }
+    /* 搜索引擎部分特有样式 */
+    #main [class ^='section'].section-four div.image {
+        top: -117px;
+    }
+    #main [class ^='section'].section-four .description {
+        top: 247px;
+    }
+    #main [class ^='section'].section-four .description p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .section-four .description p a {
+        display: block;
+    }
+    /* 云服务器优势部分样式 */
+    #main .cloud-advantage {
+        height: auto;
+        padding-top: 25px;
+    }
+    .cloud-advantage .cloud-advantage-container {
+        width: 730px;
+        height: auto;
+    }
+    .cloud-advantage-container p {
+        padding-bottom: 30px;
+    }
+    .cloud-advantage-container ul {
+        height: auto;
+    }
+    .cloud-advantage-container li {
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* 免费模板板块 */
+    #main .free-template{
+        display: none;
+    }
+    /* 建站服务模块 */
+    .station-building h3{
+        width: 740px;
+        padding-top: 75px;
+        margin: auto;
+        line-height: 36px;
+    }
+    .station-building .display{
+        width: 500px;
+    }
+    .display ul li{
+        width: 100%;
+    }
+    .station-building .btn{
+        margin-top: 60px;
+    }
+
+    /* 提供的不仅仅是工具模块 */
+    .provide p{
+        max-width: 768px;
+    }
+    .provide .image{
+        max-width: 768px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width:810px) {
+    #main [class ^='section'].plural .description {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    /* 更快区域 */
+    #main .faster .faster-content {
+        height: 170px;
+    }
+    .faster .faster-content h3 {
+        padding-top: 30px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .faster .faster-content p {
+        font-size: 14px;
+        line-height: 36px;
+    }
+    /* 快速搭建一个响应式网站 */
+    #main [class ^='section'].odd .description {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    #main [class ^='section'].odd div.image {
+        width: 100%;
+        padding: 40px 0;
+    }
+    #main [class ^='section'].odd div img {
+        width: 95%;
+    }
+    #main [class ^='section'].odd .description h3 {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    #main [class ^='section'].odd .description p {
+        font-size: 12px;
+    }
+    /* 服务器部分 */
+    #main [class ^='section'].plural {
+        height: 440px;
+    }
+    #main [class ^='section'].plural div.image {
+        top: -72px;
+    }
+    #main [class ^='section'].plural .description h3 {
+        font-size: 20px;
+    }
+    #main [class ^='section'].plural .description p {
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    /* 搜索引擎部分特有样式 */
+    #main [class ^='section'].section-four div.image {
+        top: -119px;
+    }
+    #main [class ^='section'].section-four .description {
+        top: 240px;
+    }
+    #main [class ^='section'].section-four .description p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    /* 云服务器优势部分样式 */
+    .cloud-advantage .cloud-advantage-container {
+        width: 100%;
+    }
+    .cloud-advantage-container h3 {
+        font-size: 28px;
+    }
+    .cloud-advantage-container p {
+        padding: 18px 15px 0;
+        padding-bottom: 10px;
+        line-height: 50px;
+    }
+    .cloud-advantage-container ul {
+        width: 95%;
+        margin: auto;
+    }
+    /* .cloud-advantage-container li {
+        width: 100%;
+        margin-top: 10px;
+    } */
+
+    /* 建站服务模块 */
+    .station-building h3{
+        width: auto;
+        padding-top: 90px;
+        font-size: 20px;
+        /* line-height: 20px; */
+    }
+    .station-building p{
+        width: 90%;
+        margin: 28px auto 65px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* 提供的不仅仅是工具模块 */
+    .provide h3{
+        padding-top: 70px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .provide p{
+        width: 95%;
+        font-size: 12px;
+        margin-top: 50px;
+        margin-bottom: 58px;
+    }
+    .provide .image{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:695px) {
+    #main [class ^='section'].section-four div.image {
+        top: -147px;
+    }
+    #main [class ^='section'].section-four .description p {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    #main [class ^='section'].section-three div.image {
+        top: -97px;
+    }
+}
+
+@media screen and (max-width:600px){
+    /* 建站服务模块 */
+    .station-building .display{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:545px) {
+    #main [class ^='section'].odd .description {
+        width: 95%;
+    }
+    #main [class ^='section'].odd .description h3 {
+        width: 90%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,381 @@
+@charset 'utf-8';
+body{
+	background:url('../images/bg.png') no-repeat center top/cover;
+}
+
+/* 最外层大盒子的样式 */
+.content{
+	width:1200px;
+	margin:auto;
+}
+
+/* 最上面title部分的样式 */
+.title{
+	width:1108px;
+	height:118px;
+}
+.title .logo{
+	width:198px;
+	height:100%;
+	margin-right:77px;
+}
+.nav{
+	height:100%;
+}
+.nav li{
+	height:118px;
+	line-height:118px;
+	font-size:18px;
+	color:rgb(85,2,84);
+}
+.nav li:not(:last-child){
+	margin-right:54px;
+}
+
+/* 这是游戏区域的代码 */
+.game-area{
+	width:100%;
+	height:325px;
+	margin-top:305px;
+	margin-bottom:20px;
+}
+.game-area-left{
+	width:250px;
+	margin-right: 10px;
+	/* height:100%; */
+}
+/* 游戏区域注册登陆部分的代码*/
+.register-charge{
+	width:100%;
+	height:58px;
+	background-color:#223a66;
+	font-size:24px;
+	line-height:58px;
+	color:#999;
+}
+.register-charge .register{
+	margin-left:54px;
+}
+.register-charge .charge{
+	margin-right:30px;
+}
+/* 服务区域的代码 */
+.service-center{
+	width:220px;
+	height: 144px;
+	padding:10px 15px;
+	background-color:#354e76;
+}
+.main-service{
+	height:103px;
+	border-bottom:2px solid #ddd;
+	/* text-align:center; */
+}
+.main-service h3{
+	line-height: 16px;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	color:#ccc;
+}
+.main-service input{
+	width: 201px;
+	height: 23px;
+	margin: 8px 0 11px 8px;
+	border: 1px solid rgb(4,32,51);
+	text-indent: 26px;
+	font-size: 12px;
+	color: rgb(153,153,153);
+}
+.main-service i{
+	right: 14px;
+	top: 26px;
+	font-size: 16px;
+	color: rgb(153,153,153);
+}
+.main-service p{
+	height: 14px;
+	line-height: 14px;
+	margin-bottom: 2px;
+	font-size: 14px;
+	color: rgb(204,204,204);
+}
+.main-service p:nth-of-type(2n+1){
+	margin-right: 46px;
+}
+/* 服务热线区代码 */
+.service-phone p{
+	text-align: center;
+}
+.service-phone p:first-child{
+	height: 14px;
+	margin-top: 10px;
+	line-height: 14px;
+	font-size: 14px;
+	color: rgb(0,214,253);
+}
+.service-phone p:last-child{
+	color: rgb(204,204,204);
+}
+/* 游戏区域中间区域样式 */
+.game-area-center{
+	width: 710px;
+}
+.game-area-center .tab{
+	height: 44px;
+	width: 100%;
+	line-height: 44px;
+	background-color: #262626;
+}
+.game-area-center .tab li{
+	width: 25%;
+	text-align: center;
+	font-size: 17px;
+	color: rgb(204,204,204);
+}
+.game-area-center .tab li.active{
+	color: rgb(251,118,249);
+}
+/* 游戏区域右边的样式 */
+.game-area-right{
+	width: 221px;
+}
+.game-area-right img{
+	width: 221px;
+}
+
+/* 这是信息区域的代码 */
+.message-area{
+	width: 1150px;
+	height: 613px;
+	margin-bottom: 24px;
+	padding: 0 25px;
+	background-color: rgba(240,225,230,.5);
+}
+/* 这是信息区域顶层title的公共样式 */
+ul.message-title{
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	border-bottom: 4px solid rgb(240,192,208);
+}
+/* 这是信息区域tab的公共样式 */
+li.message-tab{
+	width: 64px;
+	height: 52px;
+	padding: 0 14px 0 30px;
+	margin-right: 34px;
+	font-size: 16px;
+	color: rgb(77,77,77);
+}
+li.message-tab.active{
+	background-color: rgb(240,192,208);
+	color: rgb(85,2,84);
+}
+/* 这是信息区域左侧的代码 */
+.message-area-left{
+	width: 680px;
+}
+.message-area-left .message-title li:first-child{
+	margin-right: 38px;
+	font-size: 24px;
+	color: rgb(51,51,51);
+}
+.message-area-left .message-title li:last-child{
+	margin-right: 0;
+}
+/* 这是中间奖品区域的代码 */
+.message-area-left .prize{
+	height: 150px;
+	margin: 23px 0 18px;
+}
+.message-area-left .description{
+	width: 420px;
+	margin-left: 36px;
+	color: rgb(77,77,77);
+}
+.message-area-left .description h3{
+	text-align: center;
+	font-weight: normal;
+	font-size: 24px;
+}
+.message-area-left .description p{
+	width: 415px;
+	margin-top: 6px;
+	text-indent: 2em;
+	line-height: 16px;
+	font-size: 14px;
+}
+/* 这是左边下方公告区域的代码 */
+.message-area-left .notice{
+	width: 653px;
+	height: 300px;
+}
+.message-area-left .notice li{
+	height: 32px;
+	margin-bottom: 18px;
+	line-height: 32px;
+	color: rgb(77,77,77);
+}
+.message-area-left .notice .announce{
+	width: 66px;
+	margin-right: 23px;
+	background-color: rgb(204,198,200);
+	font-size: 16px;
+	text-align: center;
+}
+.message-area-left .notice .detail{
+	font-size: 15px;
+}
+.message-area-left .notice .dot{
+	width: 177px;
+	height: 20px;
+	margin: 0 23px;
+	border-bottom: 1px dotted rgb(178,178,178);
+}
+.message-area-left .notice .time{
+	font-size: 14px;
+}
+/* 这是信息区域右侧的代码 */
+.message-area-right{
+	width: 387px;
+}
+.message-area-right ul li{
+	margin-right: 26px;
+}
+.message-area-right ul li:last-child{
+	margin-right: 0;
+}
+.message-area-right .img{
+	margin-top: 23px;
+}
+
+/* 这是娱乐区域的代码 */
+.amusement-area{
+	height: 321px;
+	margin-bottom: 45px;
+	background-color: rgba(240,225,230,.5);
+}
+/* 这是娱乐区域顶层tab的公共代码 */
+.amusement-area ul.amuse-tab{
+	width: 100%;
+	height: 60px;
+	border-bottom: 4px solid rgb(240,192,208);
+	line-height: 60px;
+	font-size: 16px;
+	color: rgb(51,51,51);
+}
+.amusement-area li.active{
+	background-color: rgb(240,192,208);
+	color: rgb(85,2,84);
+}
+/* 这是游戏区域左侧的代码 */
+.amusement-left-area{
+	width: 145px;
+	height: 303px;
+	margin-right: 27px;
+	padding: 18px 28px 0 28px;
+	background: url('../images/jvxing.png') no-repeat;
+}
+.amusement-left-area li{
+	width: 58px;
+	height: 58px;
+	margin-bottom: 17px;
+	text-align: center;
+	font-size: 14px;
+	color: rgb(204,204,204);
+}
+.amusement-left-area ul p{
+	width: 100%;
+	bottom: 0;
+	z-index: 1;
+}
+.amusement-left-area>p{
+	width: 100%;
+	height: 30px;
+	left: 0;
+	bottom: 0;
+	background-color: #4a6084;
+}
+/* 这是游戏区域中间部分的代码 */
+.amusement-center-area{
+	width: 443px;
+}
+.amusement-center-area .center-tab li{
+	width: 48px;
+	height: 100%;
+	padding: 0 32px 0 34px;
+	margin-right: 50px;
+}
+.amusement-center-area .center-tab li:last-child{
+	margin-right: 0;
+}
+.amusement-center-area .center-detail{
+	height: 237px;
+	padding: 20px 0 0 34px;
+	background: url("../images/heibai2.png") no-repeat;
+}
+.amusement-center-area .center-detail li{
+	line-height: 36px;
+	font-size: 14px;
+	color: rgb(76,76,76);
+}
+/* 这是游戏区域右边部分的代码 */
+.amusement-right-area{
+	width: 502px;
+}
+.amusement-right-area .right-tab li{
+	width: 8.33%;
+	text-align: center;
+}
+.amusement-right-area .right-detail{
+	height: 126px;
+	padding-top: 131px;
+	background: url("../images/bottom.png") no-repeat;
+}
+.amusement-right-area .right-detail li{
+	margin-left: 25px;
+	line-height: 27px;
+	font-size: 14px;
+	color: rgb(77,77,77);
+}
+
+/* 这是bottom区域的样式 */
+.bottom{
+	width: 745px;
+	margin: auto;
+	margin-bottom: 77px;
+}
+.bottom h3{
+	width: 150px;
+	margin: auto;
+	line-height: 16px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: normal;
+}
+.bottom h3 span{
+	width: 11px;
+	height: 11px;
+	background-color: rgb(238,188,204);
+	transform: rotateZ(45deg);
+}
+.bottom ul{
+	display: flex;
+	width: 100%;
+	height: 12px;
+	margin: 14px 0 8px;
+	justify-content: space-between;
+}
+.bottom li{
+	font-size: 12px;
+	color: rgb(102,102,102);
+}
+.bottom p{
+	text-align: center;
+	font-size: 12px;
+	color: rgb(102,102,102);
+}
+
+
+

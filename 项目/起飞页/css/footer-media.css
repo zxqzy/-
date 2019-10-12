@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@media screen and (max-width:992px) {
+
+    /* 合作伙伴区域 */
+    #footer .partner {
+        height: 455px;
+    }
+
+    #footer .partner h4 {
+        padding-top: 83px;
+    }
+
+    #footer .partner .detail {
+        max-width : 768px;
+        margin    : auto;
+        margin-top: 70px;
+    }
+
+    #footer .partner .detail li {
+        width      : 50%;
+        height     : 83px;
+        margin     : 0;
+        line-height: 83px;
+    }
+
+    .partner .detail li img {
+        width : auto;
+        margin: 0;
+    }
+
+    .partner .detail li p {
+        display: none;
+    }
+
+    /* 客户和评价板块 */
+    #footer .customer-assess {
+        display: none;
+    }
+
+    /* 客户服务热线板块 */
+    #footer .costomer-service {
+        max-width: 768px;
+        height   : 280px;
+        margin   : 7px auto 105px;
+        padding  : 0 15px;
+    }
+
+    .costomer-service .hot-line {
+        width        : 100%;
+        margin-bottom: 35px;
+    }
+
+    .costomer-service .work-time {
+        float     : left;
+        margin    : 0;
+        margin-top: -70px;
+    }
+
+    .costomer-service .image {
+        float     : none;
+        width     : 100%;
+        top       : 101px;
+        text-align: right;
+    }
+
+    /* 友情链接板块 */
+    #footer .link {
+        max-width  : 768px;
+        margin     : 0 auto;
+        padding    : 0 15px;
+        line-height: 25px;
+    }
+
+    /* 起飞页，优雅做网站区域 */
+    #footer .about-website {
+        max-width: 768px;
+        margin   : 0 auto;
+        padding  : 24px 15px 0;
+    }
+
+    .about-website .right-intro {
+        display: none;
+    }
+
+    .about-website .left-intro {
+        width: auto;
+    }
+
+    .about-website .left-intro p:last-child {
+        width: 360px;
+    }
+
+    /* 页面最下角的其它信息 */
+    #footer .other-info {
+        max-width: 768px;
+        margin   : auto;
+        padding  : 0 15px;
+    }
+}
+
+@media screen and (max-width:810px) {
+
+    /* 合作伙伴区域 */
+    #footer .partner .detail {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    /* 合作伙伴区域 */
+    #footer .partner {
+        height: 445px;
+    }
+
+    #footer .partner h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:545px) {
+    .partner .detail li img {
+        width: 95%;
+    }
+}
